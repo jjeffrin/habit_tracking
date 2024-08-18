@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:habit_tracking/styles.dart';
-import 'package:lottie/lottie.dart';
 
 class QuoteForTheDay extends StatefulWidget {
   const QuoteForTheDay({super.key});
@@ -38,7 +37,7 @@ class _QuoteForTheDayState extends State<QuoteForTheDay>
           'Some of us think holding on makes us strong, but sometimes it is letting go.',
           style: HTStyles.getBodyTitleFont(),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ),
         Row(
@@ -65,8 +64,8 @@ class _QuoteForTheDayState extends State<QuoteForTheDay>
             //       width: 100.0,
 
             //     )),
-            IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.share)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.share)),
           ],
         )
       ],
